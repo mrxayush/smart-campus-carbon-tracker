@@ -1,0 +1,46 @@
+# Java / Maven
+backend/target/
+*.class
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Node / React
+frontend/node_modules/
+frontend/build/
+.pnp
+.pnp.js
+coverage/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json.backup
+
+# IDEs & Editors
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+.project
+.classpath
+.settings/
+*.sublime-workspace
+*.sublime-project
+
+# OS Generated Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Environment & Logs
+*.log
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
