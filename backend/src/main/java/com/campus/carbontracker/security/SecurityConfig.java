@@ -43,8 +43,8 @@ public class SecurityConfig {
             .headers(headers -> headers.frameOptions(frame -> frame.sameOrigin())) // Needed for H2 Console
             .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
             .authorizeHttpRequests(auth -> auth
-                // Public endpoints: Auth endpoints, Swagger UI, H2 Console
-                .requestMatchers("/api/auth/**").permitAll()
+                // Public endpoints: Health root, Auth endpoints, Swagger UI, H2 Console
+                .requestMatchers("/", "/api/auth/**").permitAll()
                 .requestMatchers("/swagger-ui/**", "/swagger-ui.html", "/v3/api-docs/**").permitAll()
                 .requestMatchers("/h2-console/**").permitAll()
 
